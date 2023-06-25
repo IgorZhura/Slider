@@ -1,9 +1,9 @@
 let images = [{
-    url: ".pr-3__slider/images/slider-1.jpg",
+    url: "./images/slider-1.jpg",
   }, {
-    url: ".pr-3__slider/images/slider-2.jpg",
+    url: "./images/slider-2.jpg",
   }, {
-    url: ".pr-3__slider/images/slider-3.jpg",
+    url: "./images/slider-3.jpg",
 }];
 
 function sliderInit(images, options) {
