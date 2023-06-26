@@ -27,12 +27,12 @@ body {
 	box-sizing: border-box;
 }
 
-.slider {
-	background: #131313;
+/*.window {
+	background: #131313;*/
 	
 }
 
-.slider-content {
+.window-content {
 	padding-bottom: 125px;
 	padding-left: 135px;
 	padding-top: 70px;
@@ -93,13 +93,6 @@ body {
 	font-size: 13px;
 	line-height: 21px;
 	color: #FFFFFF;
-}
-
-.group {
-	background-image: url(./images/group.svg);
-	height: 13px;
-	width: 205px;
-	border-radius: [object Object]px;
 }
 
 .slider__nav {
@@ -180,39 +173,34 @@ body {
 }
 
 .slider__arrows {
-  /*position: absolute;
-  /*top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;*/
-  color: #fff;
+  display: flex;
 }
 
 .slider__arrow {
-  position: absolute;
+  /*position: absolute;*/
   width: 15%;
   height: 100%;
   font-size: 20px;
   text-align: center;
   cursor: pointer;
-  opacity: 0;
-  background: rgba(0, 0, 0, 0.4);
+  /*opacity: 0;*/
+  /*background: rgba(0, 0, 0, 0.4);*/
   transition: opacity 0.4s ease;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /*align-items: flex-start;*/
+  justify-content: flex-start;
 }
 
-.slider__arrow:hover {
+/*.slider__arrow:hover {
   opacity: 1;
-}
+}*/
 
-.slider__arrow.left {
+/*.slider__arrow.left {
   left: 0;
 }
 
 .slider__arrow.right {
-  right: 0;
+  right: 0;*/
 }
 
 .slider__dots {
@@ -244,7 +232,7 @@ body {
 	width: 679px;
 }
 
-.foto:hover {
+.foto {
 	background-image: url(./images/slider-2.jpg);
 	height: 482px;
 	width: 679px;

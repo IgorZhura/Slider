@@ -116,7 +116,7 @@ function sliderInit(images, options) {
 
 document.addEventListener("DOMContentLoaded", function() {
   let sliderOptions = {
-    dots: false,
+    dots: true,
     titles: false,
     autoplay: true,
     autoplayInterval: 4000
