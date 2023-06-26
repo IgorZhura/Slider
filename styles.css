@@ -128,7 +128,7 @@ body {
 	text-transform: uppercase;
 }
 
-.slider__nav__li__item a:hover {
+.slider__nav__li__item a:hover, .slider__nav__li__item a.active {
 	color:#E3B873; 
 	text-decoration: underline;
 }

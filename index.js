@@ -1,9 +1,9 @@
 let images = [{
-    url: "./slider-1.jpg",
+    url: "./images/slider-1.jpg",
   }, {
-    url: "./slider-2.jpg",
+    url: "./images/slider-2.jpg",
   }, {
-    url: "./slider-3.jpg",
+    url: "./images/slider-3.jpg",
 }];
 
 function sliderInit(images, options) {
