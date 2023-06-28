@@ -1,9 +1,12 @@
 let images = [{
     url: "./images/slider-1.jpg",
+    navTop: "Rostov-on-Don, Admiral"
   }, {
     url: "./images/slider-2.jpg",
+    navTop: "Sochi Thieves"
   }, {
     url: "./images/slider-3.jpg",
+    navTop: "Rostov-on-Don Patriotic"
 }];
 
 function sliderInit(images, options) {
@@ -20,7 +23,7 @@ function sliderInit(images, options) {
   let sliderImages = document.querySelector(".slider__images");
   let sliderArrows = document.querySelector(".slider__arrows");
   let dotsWrapper = document.querySelector(".slider__dots");
-  let navWraper = document.querySelector(".slider__nav__li__item");
+  let navWrapper = document.querySelector(".slider__nav__li");
   let intervalId;
   
   initImages();
@@ -95,17 +98,19 @@ function sliderInit(images, options) {
 
   function initNav() {
     images.forEach((image, index) => {
-      let nav = document.createElement("li");
-      nav.className = `slider__nav__li__item n${index} ${index === 0? "active" : ""}`
-      nav.dataset.index = index;
-      nav.addEventListener("click", function() {
-        moveSlider(nav.dataset.index);
-        if (options.autoplay) {
-          clearInterval(intervalId);
-        }
-      });
-      navWrapper.appendChild(nav);
+      // let nav = document.createElement("li");
+      let nav = `<li class="slider__nav__li__item" 
+      n${index} ${index === 0? "active" : ""} "data-index = "${index}">
+      <a href="javascript:;"><span style="color:#E3B873; 
+      text-decoration: underline;">${image.navTop}</span>
+      </a></li>`
+      navWrapper.innerHTML += nav;          
     });
+    document.querySelectorAll(".slider__nav__li__item").forEach(nav => {
+      nav.addEventListener("click", function() {
+        moveSlider(this.dataset.index);
+    })
+  })
   }
   
   function initTitles() {
