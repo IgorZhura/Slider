@@ -99,8 +99,8 @@ function sliderInit(images, options) {
   function initNav() {
     images.forEach((image, index) => {
       // let nav = document.createElement("li");
-      let nav = `<li class="slider__nav__li__item" 
-      n${index} ${index === 0? "active" : ""} "data-index = "${index}">
+      let nav = `<li class="slider__nav__li__item"  
+      n${index} ${index === 0? "active" : ""} data-index = "${index}">
       <a href="javascript:;"><span style="color:#E3B873; 
       text-decoration: underline;">${image.navTop}</span>
       </a></li>`
